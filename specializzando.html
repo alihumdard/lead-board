@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specializzando</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              special: ["Fredoka", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: "Fredoka", sans-serif;
+        margin: 0;
+        padding: 0;
+        overscroll-behavior: none;
+      }
+
+      /* 3D text effect for Mobile */
+      .text-3d-mobile {
+        color: #ffffff;
+        -webkit-text-stroke: 2.5px #a14500;
+        text-shadow:
+          0px 5px 0px #5c2600,
+          0px 15px 20px rgba(0, 0, 0, 0.6);
+      }
+
+      /* 3D text effect for Desktop */
+      .text-3d-desktop {
+        color: #ffffff;
+        -webkit-text-stroke: 2.5px #a14500;
+        text-shadow:
+          0px 4px 0px #5c2600,
+          0px 10px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <div
+      class="md:hidden relative w-full h-[100dvh] bg-gradient-to-b from-[#06163f] via-[#143d8c] to-[#2563eb] overflow-hidden flex flex-col"
+    >
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] bg-[#d97706] rounded-full blur-[75px] opacity-95 pointer-events-none"
+      ></div>
+
+      <div class="relative z-10 flex flex-col h-full px-6 py-8">
+        <div class="flex items-center justify-between w-full pt-4">
+          <span
+            class="text-white text-lg font-semibold tracking-wide shadow-sm"
+          >
+            Luigi
+          </span>
+
+          <div
+            class="flex items-center bg-white rounded-full p-[3px] shadow-lg"
+          >
+            <div
+              class="bg-[#5cdb3b] text-[#064e3b] font-bold text-[11px] px-3 py-1 rounded-full shadow-inner leading-none flex items-center h-[22px]"
+            >
+              301
+            </div>
+            <div
+              class="bg-[#2563eb] text-white font-bold text-[11px] px-3 py-1 rounded-full ml-1 shadow-inner leading-none flex items-center h-[22px]"
+            >
+              Lev 2
+            </div>
+          </div>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-[26px] h-[26px] text-white drop-shadow-md"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+            />
+          </svg>
+        </div>
+
+        <div class="mt-20 flex flex-col items-center">
+          <h1
+            class="text-[42px] leading-[1.05] font-bold text-center text-3d-mobile tracking-wide"
+          >
+            Specializzando<br />
+            Sfruttato
+          </h1>
+        </div>
+
+        <div class="flex-grow"></div>
+
+        <div class="w-full pb-8">
+          <button
+            class="w-full bg-gradient-to-b from-[#6af235] to-[#36b911] text-white font-bold text-[22px] py-[14px] rounded-[22px] shadow-[0_6px_0_#1a7a0b,0_15px_20px_rgba(0,0,0,0.4)] border-2 border-[#97fc6f] active:translate-y-[6px] active:shadow-[0_0px_0_#1a7a0b,0_5px_10px_rgba(0,0,0,0.4)] transition-all duration-100 ease-in-out cursor-pointer tracking-wide"
+          >
+            Prosegui
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="hidden md:flex relative w-full h-screen bg-cover bg-center bg-no-repeat overflow-hidden items-center justify-center flex-col"
+      style="background-image: url(image/unnamed\ \(1\).jpg)"
+    >
+      <div class="relative z-10 flex flex-col items-center mt-[-35vh]">
+        <div class="mb-2 relative">
+          <div
+            class="absolute inset-0 bg-blue-600 rounded-full blur-[10px] opacity-20 translate-y-2"
+          ></div>
+          <svg
+            class="relative w-[120px] h-[120px] drop-shadow-md"
+            viewBox="0 0 24 24"
+            fill="#ffca28"
+            stroke="#3b82f6"
+            stroke-width="1.5"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          >
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+            ></polygon>
+          </svg>
+        </div>
+
+        <h1
+          class="text-[84px] font-bold text-center text-3d-desktop tracking-tighter"
+        >
+          Specializzando Sfruttato
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bilogia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Custom scrollbar for desktop options panel */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #e2e8f0;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body class="flex bg-white items-center justify-center p-0 antialiased">
+    <div
+      class="w-full h-screen md:h-auto bg-white md:rounded-[32px] md:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] flex flex-col md:flex-row overflow-hidden xl:pt-[120px] relative"
+    >
+      <div
+        class="md:hidden flex flex-col items-center pt-10 px-6 xl:px-0 pb-2 shrink-0"
+      >
+        <div
+          class="relative w-[100px] h-[100px] flex items-center justify-center rounded-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-[3px] border-slate-50 mb-4"
+        >
+          <!-- Base Ring -->
+          <svg class="absolute inset-0 w-full h-full rotate-180">
+            <circle
+              cx="45"
+              cy="45"
+              r="45"
+              stroke="#ffff"
+              stroke-width="3"
+              fill="none"
+            />
+          </svg>
+
+          <!-- Blue Progress Arc -->
+          <svg class="absolute inset-0 w-full h-full rotate-180">
+            <circle
+              cx="45"
+              cy="45"
+              r="45"
+              stroke="#00C2FF"
+              stroke-width="4"
+              fill="none"
+              stroke-linecap="round"
+              stroke-dasharray="238.6"
+              stroke-dashoffset="175"
+            />
+          </svg>
+
+          <span class="text-xl font-bold text-[#06B6D4]">18:40</span>
+        </div>
+
+        <h1 class="text-[26px] font-bold text-gray-900 tracking-tight">
+          Biologia
+        </h1>
+
+        <div
+          class="w-full max-w-[280px] flex items-center justify-between gap-4 mt-6"
+        >
+          <div class="h-2.5 flex-1 bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-[#2563EB] w-[77%] rounded-full"></div>
+          </div>
+          <span class="text-[13px] font-bold text-gray-700">24/31</span>
+        </div>
+
+        <h2
+          class="text-[18px] font-bold text-gray-800 leading-snug mt-8 text-center px-2"
+        >
+          Processi di fagocitosi e autofagia:
+        </h2>
+      </div>
+
+      <div
+        class="hidden md:flex flex-col w-[45%] py-12 relative bg-white shrink-0"
+      >
+        <div
+          class="relative w-[550px] h-[135px] bg-gradient-to-r from-[#0C2D6B] via-[#2D63D6] to-[#3B82F6] rounded-r-[35px] flex items-center pl-[100px] pr-[10px]"
+        >
+          <!-- Title -->
+          <h1 class="text-white text-[50px] font-semibold tracking-[-0.5px]">
+            Biologia
+          </h1>
+
+          <!-- Timer Box -->
+          <div
+            class="absolute right-[3px] w-[130px] h-[130px] bg-[#FFFFFFE5] rounded-[35px] border-[3px] border-[#06B6D4] flex items-center justify-center shadow-[0_8px_20px_rgba(0,0,0,0.25)]"
+          >
+            <!-- Inner Circle -->
+            <div class="relative w-[90px] h-[90px]">
+              <!-- Base Light Ring -->
+              <svg class="absolute inset-0 w-full h-full rotate-180">
+                <circle
+                  cx="45"
+                  cy="45"
+                  r="38"
+                  stroke="#FFFFFFE5"
+                  stroke-width="3"
+                  fill="none"
+                />
+              </svg>
+
+              <!-- Blue Progress Arc -->
+              <svg class="absolute inset-0 w-full h-full rotate-180">
+                <circle
+                  cx="45"
+                  cy="45"
+                  r="38"
+                  stroke="#00C2FF"
+                  stroke-width="3"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-dasharray="238.6"
+                  stroke-dashoffset="175"
+                />
+              </svg>
+
+              <!-- Time Text -->
+              <div class="absolute inset-0 flex items-center justify-center">
+                <span
+                  class="text-[#00C2FF] font-semibold p-10 text-[22px] leading-[1%] font-light"
+                >
+                  18:40
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="ml-12 xl:ml-[100px] mt-10 xl:mt-0 mr-8 bg-[#99999926] rounded-[15px] p-8 xl:p-5 md:p-6 md:max-w-[350px] xl:max-w-[390px] xl:h-[378px]"
+        >
+          <div
+            class="flex items-center mb-8 xl:mt-1.5 xl:mb-14 md:mb-5 relative"
+          >
+            <span
+              class="text-[12px] font-bold text-gray-400 absolute -top-4 md:-top-3.5 left-0"
+            >
+              21/28
+            </span>
+            <div
+              class="h-2.5 md:h-2 w-full bg-gray-200 mt-2 rounded-full overflow-hidden"
+            >
+              <div class="h-full bg-[#2563EB] w-[75%] rounded-full"></div>
+            </div>
+          </div>
+
+          <div
+            class="grid grid-cols-7 gap-y-5 md:gap-y-3 xl:gap-y-11 text-center text-[11px] font-semibold text-gray-700"
+          >
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div class="relative flex justify-center items-center">
+              <div
+                class="absolute w-8 h-8 md:w-7 md:h-7 bg-[#2563EB] rounded-full shadow-md shadow-blue-300 -z-0"
+              ></div>
+              <span class="relative z-10 text-white">22</span>
+            </div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="ml-[100px] mt-auto pt-10 mr-8">
+          <button
+            class="bg-[#788293] hover:bg-[#606979] text-white text-2xl font-bold py-4 px-8 xl:px-[60px] xl:py-[30px] rounded-[16px] transition-all shadow-md"
+          >
+            Precedente
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="w-full md:w-[55%] flex flex-col xl:pr-8 xl:pl-32 px-5 md:px-14 pt-2 md:pt-16 pb-[120px] md:pb-12 overflow-y-auto custom-scrollbar"
+      >
+        <!-- Title -->
+        <h2
+          class="hidden md:block text-[30px] font-semibold text-black leading-[1.3] tracking-wide mb-6 xl:mt-6"
+        >
+          I processi di fagocitosi e autofagia:
+        </h2>
+
+        <div class="space-y-5 flex-1">
+          <!-- CARD -->
+          <label
+            class="flex items-center flex-row-reverse md:flex-row justify-between p-4 xl:p-5 md:p-6 bg-white border-2 xl:border-[2px] md:border border-[#E9ECEF] md:border-[#CFC9E6] rounded-[18px] xl:rounded-[18px] md:rounded-[22px] cursor-pointer md:shadow-[3px_3px_0_#CFC9E6] shadow-[3px_3px_0_#CFC9E6]"
+          >
+            <span
+              class="text-[14px] md:text-[16px] font-medium text-black leading-tight pr-1"
+            >
+              Contribuiscono a proteggere la cellula da parassiti extracellulari
+              e intercellulari
+            </span>
+
+            <div
+              class="w-10 xl:w-8 xl:h-10 h-10 md:w-11 md:h-11 mr-2 shrink-0 rounded-xl xl:rounded-md md:rounded-[10px] border-2 md:border-2 border-[#DEE2E6] md:border-[#6B6B75] flex items-center justify-center text-[15px] font-semibold text-gray-500 md:text-[#6B6B75] bg-white"
+            >
+              A
+            </div>
+          </label>
+
+          <!-- Repeat cards (B–E) -->
+
+          <label
+            class="flex items-center flex-row-reverse md:flex-row justify-between p-4 md:p-6 xl:px-5 xl:py-3.5 bg-white xl:rounded-[18px] border-2 xl:border-[2px] md:border border-[#E9ECEF] md:border-[#CFC9E6] rounded-[18px] md:rounded-[22px] cursor-pointer md:shadow-[3px_3px_0_#CFC9E6] shadow-[3px_3px_0_#CFC9E6]"
+          >
+            <span
+              class="text-[14px] md:text-[16px] font-medium text-black max-w-sm xl:text-[18px]"
+            >
+              Sono lo stesso processo indicato con termini diversi
+            </span>
+            <div
+              class="w-10 xl:w-8 xl:h-10 h-10 md:w-11 md:h-11 mr-2 shrink-0 rounded-xl xl:rounded-md md:rounded-[10px] border-2 md:border-2 border-[#DEE2E6] md:border-[#6B6B75] flex items-center justify-center text-[15px] font-semibold text-gray-500 md:text-[#6B6B75] bg-white"
+            >
+              B
+            </div>
+          </label>
+
+          <label
+            class="flex items-center flex-row-reverse md:flex-row justify-between p-4 md:p-6 xl:px-5 xl:py-3.5 bg-white xl:rounded-[18px] border-2 xl:border-[2px] md:border border-[#E9ECEF] md:border-[#CFC9E6] rounded-[18px] md:rounded-[22px] cursor-pointer md:shadow-[3px_3px_0_#CFC9E6] shadow-[3px_3px_0_#CFC9E6]"
+          >
+            <span
+              class="text-[14px] md:text-[16px] font-medium text-black max-w-xs xl:text-[18px]"
+            >
+              Il primo coinvolge lisosomi, il secondo no
+            </span>
+            <div
+              class="w-10 xl:w-8 xl:h-10 h-10 md:w-11 mr-2 md:h-11 rounded-xl xl:rounded-md md:rounded-[10px] border-2 border-[#DEE2E6] md:border-[#6B6B75] flex items-center justify-center text-[15px] font-semibold text-gray-500 md:text-[#6B6B75] bg-white"
+            >
+              C
+            </div>
+          </label>
+
+          <label
+            class="flex items-center flex-row-reverse md:flex-row justify-between p-4 md:p-6 xl:px-5 xl:py-3.5 bg-white xl:rounded-[18px] border-2 xl:border-[2px] md:border border-[#E9ECEF] md:border-[#CFC9E6] rounded-[18px] md:rounded-[22px] cursor-pointer md:shadow-[3px_3px_0_#CFC9E6] shadow-[3px_3px_0_#CFC9E6]"
+          >
+            <span
+              class="text-[14px] md:text-[16px] font-medium text-black max-w-xs xl:text-[18px]"
+            >
+              Il primo coinvolge lisosomi, il secondo no
+            </span>
+            <div
+              class="w-10 xl:w-8 xl:h-10 h-10 md:w-11 md:h-11 mr-2 rounded-xl xl:rounded-md md:rounded-[10px] border-2 border-[#DEE2E6] md:border-[#6B6B75] flex items-center justify-center text-[15px] font-semibold text-gray-500 md:text-[#6B6B75] bg-white"
+            >
+              D
+            </div>
+          </label>
+
+          <label
+            class="flex items-center flex-row-reverse md:flex-row justify-between p-4 md:p-6 xl:px-5 xl:py-3.5 bg-white xl:rounded-[18px] border-2 xl:border-[2px] md:border border-[#E9ECEF] md:border-[#CFC9E6] rounded-[18px] md:rounded-[22px] cursor-pointer md:shadow-[3px_3px_0_#CFC9E6] shadow-[3px_3px_0_#CFC9E6]"
+          >
+            <span
+              class="text-[14px] md:text-[16px] font-medium text-black max-w-xs xl:text-[18px]"
+            >
+              Il primo coinvolge lisosomi, il secondo no
+            </span>
+            <div
+              class="w-10 xl:w-8 xl:h-10 h-10 md:w-11 md:h-11 mr-2 rounded-xl xl:rounded-md md:rounded-[10px] border-2 border-[#DEE2E6] md:border-[#6B6B75] flex items-center justify-center text-[15px] font-semibold text-gray-500 md:text-[#6B6B75] bg-white"
+            >
+              E
+            </div>
+          </label>
+        </div>
+
+        <!-- Button -->
+        <div class="hidden md:flex justify-end mt-12">
+          <button
+            class="bg-[#2563EB] text-white text-2xl font-bold py-4 px-12 xl:px-[60px] xl:py-[30px] rounded-[16px] shadow-[0_10px_20px_rgba(37,99,235,0.35)]"
+          >
+            Continua
+          </button>
+        </div>
+      </div>
+
+      <div class="md:hidden fixed bottom-0 left-0 right-0 p-5 bg-white z-50">
+        <!-- Outer Capsule -->
+        <div class="flex items-center bg-[#2F61D5] rounded-2xl p-1">
+          <!-- Left Button -->
+          <button
+            class="flex-1 bg-[#8B909A] text-white py-2 rounded-2xl text-[20px] font-semibold tracking-wide"
+          >
+            PRECEDENTE
+          </button>
+
+          <!-- Right Button -->
+          <button
+            class="flex-1 text-white py-2 rounded-full text-[20px] font-semibold tracking-wide"
+          >
+            CONTINUA
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
